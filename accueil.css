@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
   background:
     linear-gradient(rgba(15,17,21,0.62), rgba(15,17,21,0.62)),
-    url("images/rose.jpg") center/cover no-repeat fixed;
+    url("rose.jpg") center/cover no-repeat fixed;
   font-family: var(--font-text);
   color: var(--text-main);
   line-height: 1.85;
@@ -78,3 +78,4 @@ h1 {
   background: var(--accent);
   color: var(--bg-dark);
 }
+
