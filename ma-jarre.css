@@ -1,0 +1,81 @@
+@import url("accueil.css");
+
+.subtitle {
+  margin-bottom: 50px;
+  font-size: 1.05rem;
+}
+
+.jar-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.jar-buttons button {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 10px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: var(--font-text);
+}
+
+.jar-buttons button.active {
+  background: var(--accent);
+  color: var(--bg-dark);
+}
+
+.content {
+  display: none;
+  margin-top: 40px;
+}
+
+.content.active {
+  display: block;
+}
+
+.content p {
+  margin-bottom: 24px;
+  font-size: 1.05rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.25);
+}
+/* Accordion */
+.accordion {
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.accordion-title {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(216, 185, 126, 0.4);
+  padding: 18px 10px;
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accordion-title:hover {
+  color: #fff;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content p {
+  margin: 25px 0 35px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-main);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.25);
+}

@@ -1,0 +1,80 @@
+:root {
+  --bg-dark: #0f1115;
+  --text-main: #f7f5f2;
+  --accent: #d8b97e;
+
+  --font-title: 'Cormorant Garamond', serif;
+  --font-text: 'Source Serif 4', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(15,17,21,0.62), rgba(15,17,21,0.62)),
+    url("images/rose.jpg") center/cover no-repeat fixed;
+  font-family: var(--font-text);
+  color: var(--text-main);
+  line-height: 1.85;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.menu a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+
+.menu a.active {
+  border-bottom: 1px solid var(--accent);
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 80px 24px 120px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+}
+
+.intro p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.25);
+}
+
+.cta {
+  margin-top: 80px;
+}
+
+.btn {
+  padding: 14px 40px;
+  border-radius: 40px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: var(--bg-dark);
+}

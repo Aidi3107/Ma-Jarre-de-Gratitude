@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma jarre</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Source+Serif+4:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ma-jarre.css">
+</head>
+
+<body>
+
+<nav class="menu">
+  <a href="accueil.html">Accueil</a>
+  <a class="active">Ma jarre</a>
+</nav>
+
+<main class="container">
+
+  <h1>Ma jarre</h1>
+  <p class="subtitle">Choisis ce que tu souhaites ouvrir.</p>
+
+  <div class="jar-buttons">
+    <button class="active" data-target="gratitude">Gratitude</button>
+    <button data-target="pensees">Pensées</button>
+    <button data-target="ouvrir">À ouvrir quand…</button>
+    <button data-target="musique">Musique</button>
+  </div>
+
+  <div class="jar-content">
+
+  <!-- GRATITUDE -->
+  <section id="gratitude" class="content active">
+    <div class="accordion">
+
+      <button class="accordion-title">Merci</button>
+      <div class="accordion-content">
+        <p>
+          Merci pour ta présence constante, même quand tout est lourd.<br>
+          Merci pour cette façon d’être là, sans jamais t’imposer.<br>
+          Ta simple présence apaise plus que tu ne l’imagines.
+        </p>
+      </div>
+
+      <button class="accordion-title">Reconnaissance</button>
+      <div class="accordion-content">
+        <p>
+          Ce que tu fais va bien au-delà de ce que ton rôle exige.<br>
+          Ton engagement laisse une trace réelle et durable<br>
+          dans les parcours que tu accompagnes.
+        </p>
+      </div>
+
+      <button class="accordion-title">Présence</button>
+      <div class="accordion-content">
+        <p>
+          Être présent, vraiment, est une qualité rare.<br>
+          Tu offres cette présence avec beaucoup de justesse<br>
+          et de respect.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PENSEES -->
+  <section id="pensees" class="content">
+    <div class="accordion">
+
+      <button class="accordion-title">Rappel</button>
+      <div class="accordion-content">
+        <p>
+          Tu n’as pas besoin d’en faire plus pour être légitime.<br>
+          Ce que tu fais est déjà suffisant.
+        </p>
+      </div>
+
+      <button class="accordion-title">Respirer</button>
+      <div class="accordion-content">
+        <p>
+          Prendre une pause n’est pas reculer.<br>
+          C’est parfois la chose la plus juste à faire.
+        </p>
+      </div>
+
+      <button class="accordion-title">Continuer</button>
+      <div class="accordion-content">
+        <p>
+          Un pas à la fois suffit parfois.<br>
+          Il n’est pas nécessaire d’aller vite pour avancer.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- A OUVRIR QUAND -->
+  <section id="ouvrir" class="content">
+    <div class="accordion">
+
+      <button class="accordion-title">Quand tu doutes</button>
+      <div class="accordion-content">
+        <p>
+          Même dans l’incertitude, ce que tu fais a du sens.<br>
+          Tu peux te faire confiance.
+        </p>
+      </div>
+
+      <button class="accordion-title">Quand tu es fatigué</button>
+      <div class="accordion-content">
+        <p>
+          Tu portes beaucoup.<br>
+          Repose-toi sans culpabilité.<br>
+          Tu as le droit de t’arrêter.
+        </p>
+      </div>
+
+      <button class="accordion-title">Quand c’est difficile</button>
+      <div class="accordion-content">
+        <p>
+          Les jours lourds n’annulent pas tout le reste.<br>
+          Tu n’es pas seul, même dans le silence.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MUSIQUE -->
+  <section id="musique" class="content">
+    <p>
+      Une playlist pensée comme un espace pour respirer,<br>
+      ralentir, et simplement être.
+    </p>
+
+    <a href="https://open.spotify.com" target="_blank" class="btn">
+      Écouter la playlist
+    </a>
+  </section>
+
+</div>
+
+</main>
+
+<script src="ma-jarre.js"></script>
+</body>
+</html>
